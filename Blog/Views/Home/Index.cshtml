@@ -1,10 +1,13 @@
-﻿@{
+﻿@model IEnumerable<Blog.Models.Posts.HomeIndexPostModel>
+
+@{
     ViewBag.Title = "Home Page";
 }
 
-<h1></h1>
-<img src="../Images/HomePagePicture.jpg" height="799" width="720" alt scale ="0"/>
-<br>
-<a href="~/HTML PAGES/Бърза,лесна и вкусна закуска.html">Бърза, лесна и много вкусна закуска</a>
-<br>
-<a href="~/HTML PAGES/Бананово браунис.html">Бананово браунис</a>
+<div class="jumbotron">
+    <h1 class="text-center">HealthyFoods</h1>
+    <p class="lead text-center">Your place for finding and sharing healthy meals.</p>
+    <p class="text-center">
+        <a href="~/Models/Posts/HomeIndexPostModel.cs" class="btn btn-primary btn-lg">Add Tours</a>
+    </p>
+</div>

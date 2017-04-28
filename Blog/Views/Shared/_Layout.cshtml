@@ -3,13 +3,12 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <title>HealthyFoods - @ViewBag.Title</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 
 <style>
-    
     body {
         background-color: lightyellow;
     }
@@ -25,9 +24,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Cooking for Dummies", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Add Recipe", "Create", "Posts")
+                @Html.ActionLink("HealthyFoods", "Index", "Home", new { area = " " }, new { @class = "navbar-brand" })
+
+
             </div>
             <div class="navbar-collapse collapse">
+
                 @Html.Partial("_LoginPartial")
             </div>
         </div>
